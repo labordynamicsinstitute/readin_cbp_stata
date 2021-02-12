@@ -10,7 +10,7 @@ cat << EOF
  $0 year
  will download $PRODUCT data for the relevant year.
 
- Source URL: $(cat ../../doc/${product}/SRC.txt)
+ Source URL: $(cat ../doc/SRC.txt)
  (internally: $baseurl )
 EOF
 exit 2
@@ -22,7 +22,8 @@ logfile=$(pwd)/$0.$(date +%F).log
   [[ $arg -gt 99 ]] && let arg-=100
   [[ $arg -le 9 ]] && arg=0$arg
   echo "Getting CBP data for $year ($arg)"
-  cd ../../raw/$product
+  [ -d ../raw/ ] || mkdir ../raw
+  cd ../raw/
   # configure the full URL
       fullurl=${baseurl}/${year}/
     echo "Using $fullurl as base" 

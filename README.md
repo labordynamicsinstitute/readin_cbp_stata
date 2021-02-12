@@ -22,11 +22,12 @@ You will need to adjust directory structure to suit your needs.
 
 All programs are run from the `programs/` directory.
 
-Download all the ZIP files needed:
+Download the ZIP files needed:
 
 ```{bash}
-./01_get_data.sh
+./01_get_data.sh YEAR
 ```
+where YEAR = 19xx or 20xx (the actual four-digit year).
 
 Read in the national, county, and MSA files, and concatenate into a single standardized file:
 
