@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4540232.svg)](https://doi.org/10.5281/zenodo.4540232)
+
+
 # A sequence of programs to readin in County Business Pattern data from the US Census Bureau
 
 These programs have been used since at least 2001 in order to read in raw [County Business Pattern](https://www.census.gov/programs-surveys/cbp.html) data from the US Census Bureau. They have been updated over the years, and may be functionally superseded by the more modern [Census Bureau API](https://www.census.gov/data/developers.html), but they still allow to readin several decades of data in bulk.
